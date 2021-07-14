@@ -27,6 +27,9 @@ p {
   font-weight: 400;
   color: #6c6c6c;
 }
+.half-width {
+  width: 50%;
+}
 .link-button {
   color: #ffffff;
   text-decoration: none;
@@ -60,12 +63,6 @@ header {
   background-color: #2d25a0;
   width: 100%;
   height: 677px;
-  justify-content: center;
-}
-
-#top-banner {
-  width: 1524px;
-  margin: auto;
 }
 
 /* nav bar styles */
@@ -106,7 +103,7 @@ i {
 }
 .nav-links li:hover::after {
   width: 100%;
-  transition: 0.5s;
+  transition: width 0.5s ease-in-out;
 }
 .link-button i {
   padding-right: 8px;
@@ -114,8 +111,9 @@ i {
 
 /* nav bar end */
 
-.half-width {
-  width: 50%;
+#top-banner {
+  width: 80%;
+  margin: auto;
 }
 
 #top-image img {
@@ -128,9 +126,6 @@ i {
 
 /* players section styles */
 
-/* section {
-  display: flex;
-} */
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,12 +153,12 @@ i {
 ------------------- */
 
 #highlights-section {
-  width: 1470px;
-  margin: auto;
+  width: 1500px;
+  margin: 0 auto;
   align-items: center;
 }
 .highlights-text {
-  width: 60%;
+  width: 40%;
 }
 .highlights-text h2 {
   font-size: 48px;
@@ -175,7 +170,12 @@ i {
 }
 .highlights-image img {
   width: 567px;
+  margin-left: 300px;
 }
+
+/*------------------------
+  Latest News Section Styles
+------------------------*/
 
 .latest-news h1 {
   color: black;
@@ -207,21 +207,25 @@ i {
   padding-top: 100px;
   text-align: center;
 }
-.sub-text {
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+
+/*--------------------------
+  Subscribtion Section Styles
+--------------------------*/
+
 .newsletter {
   background-color: #2d25a0;
   color: white;
   height: 550px;
 }
+.sub-text {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
 .newsletter h2 {
   font-size: 48px;
   margin-bottom: 0;
-
   align-items: center;
 }
 .newsletter p {
@@ -308,6 +312,8 @@ footer p {
    Mobile Phone Responsive Styles
  ----------------------------*/
 @media screen and (max-width: 488px) {
+  /* common */
+
   h1 {
     font-size: 40px;
   }
@@ -317,6 +323,8 @@ footer p {
   nav {
     display: none;
   }
+
+  /* header */
 
   #top-banner {
     display: block;
@@ -333,15 +341,20 @@ footer p {
     display: none;
   }
 
+  /* players */
+
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* highlights */
 
   #highlights-section {
     display: block;
     width: 100%;
   }
   .highlights-text {
+    width: 50%;
     margin: 0 auto;
     text-align: center;
   }
@@ -355,9 +368,14 @@ footer p {
     display: none;
   }
 
+  /* latest news */
+
   .multiple-news {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  /* footer */
+
   footer {
     display: block;
     width: 100%;
@@ -372,3 +390,5 @@ footer p {
     left: 75px;
   }
 }
+
+/* End */
