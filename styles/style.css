@@ -41,9 +41,6 @@ p {
   transform: translate(20px, 0);
   transition: transform 1s;
 }
-.text-box {
-  width: 80%;
-}
 
 .info-box:hover {
   background-color: #e02c6d;
@@ -154,7 +151,6 @@ i {
 }
 .player img {
   width: 100%;
-  margin-right: 156px;
 }
 
 /*--------------------
@@ -165,6 +161,9 @@ i {
   width: 1470px;
   margin: auto;
   align-items: center;
+}
+.highlights-text {
+  width: 60%;
 }
 .highlights-text h2 {
   font-size: 48px;
@@ -303,4 +302,70 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+@media screen and (max-width: 488px) {
+  nav {
+    display: none;
+  }
+
+  #top-banner {
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+  }
+  #top-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+  #top-image img {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #highlights-section {
+    display: block;
+    width: 100%;
+  }
+  .highlights-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .highlights-text h2 {
+    font-size: 36px;
+  }
+  .highlights-text p {
+    margin: 15px auto;
+  }
+  .highlights-image img {
+    display: none;
+  }
+
+  .multiple-news {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    display: block;
+    width: 100%;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .logo img {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: 75px;
+  }
 }
