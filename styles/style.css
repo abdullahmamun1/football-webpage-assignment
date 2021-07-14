@@ -96,7 +96,21 @@ i {
   justify-content: space-between;
   align-items: center;
 }
-
+.nav-links li a:hover {
+  color: rgba(255, 255, 255, 0.692);
+}
+.nav-links li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #e02c6d;
+  margin: auto;
+}
+.nav-links li:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
 .link-button i {
   padding-right: 8px;
 }
@@ -232,6 +246,12 @@ footer {
   align-items: center;
   border-radius: 50%;
   font-size: 16px;
+}
+
+.fab:hover {
+  background-color: #e02c6d;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 footer p {
