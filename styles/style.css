@@ -208,6 +208,53 @@ i {
   padding-top: 100px;
   text-align: center;
 }
+.sub-text {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.newsletter {
+  background-color: #2d25a0;
+  color: white;
+  height: 550px;
+}
+
+.newsletter h2 {
+  font-size: 48px;
+  margin-bottom: 0;
+
+  align-items: center;
+}
+.newsletter p {
+  line-height: 0;
+  color: white;
+  margin-bottom: 30px;
+}
+.inputs {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+}
+input[type="checkbox"] {
+  margin: 10px 0;
+}
+input[type="submit"] {
+  background-color: #e02c6d;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: #c9195a;
+}
+
 /*---------------
  footer styles
 ---------------*/
