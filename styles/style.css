@@ -304,7 +304,16 @@ footer p {
   text-align: center;
 }
 
+/*----------------------------
+   Mobile Phone Responsive Styles
+ ----------------------------*/
 @media screen and (max-width: 488px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
   nav {
     display: none;
   }
@@ -322,12 +331,6 @@ footer p {
   }
   #top-image img {
     display: none;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  p {
-    font-size: 14px;
   }
 
   .players {
